@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Everybody Loves Fruit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Landing: gecentreerd, regenwoudachtergrond, merknaam groot in outline-letter, drie tegels (koek, snoep, chocolade). */
+:root{
+  color-scheme:dark;
+  --bg:#0b3324;
+  --canopy:#1f7549;
+  --mid:#0f4c34;
+  --floor:#06241a;
+  --bg-soft:rgba(241,246,234,.08);
+  --fg:#f1f6ea;
+  --muted:#b9d3c2;
+  --line:rgba(241,246,234,.2);
+  --mango:#f2a12b;
+  --orange:#f07a3a;
+  --pine:#f0c93e;
+  --fig:#d08cc2;
+  --accent:#ffb02e;
+  --on-accent:#0c2a1d;
+  --font-display:"Londrina Outline","Bungee Outline",Impact,"Arial Black",sans-serif;
+  --font-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --leaves:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='440' height='440' viewBox='0 0 440 440'><g fill='%2388d89a' fill-opacity='.08' stroke='%23a6e8b2' stroke-opacity='.1' stroke-width='2'><path transform='translate(40 90) rotate(-35)' d='M0 0C40-52 130-52 180 0C130 52 40 52 0 0Z'/><path transform='translate(330 50) rotate(42)' d='M0 0C40-52 130-52 180 0C130 52 40 52 0 0Z'/><path transform='translate(210 330) rotate(-112)' d='M0 0C40-52 130-52 180 0C130 52 40 52 0 0Z'/><path transform='translate(430 400) rotate(150) scale(.8)' d='M0 0C40-52 130-52 180 0C130 52 40 52 0 0Z'/><path transform='translate(110 420) rotate(-70) scale(.6)' d='M0 0C40-52 130-52 180 0C130 52 40 52 0 0Z'/></g></svg>");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background-color:var(--bg);background-image:radial-gradient(ellipse 70% 480px at 72% 0,rgba(214,255,160,.3),transparent 70%),var(--leaves),linear-gradient(180deg,var(--canopy) 0,var(--mid) 28%,var(--floor) 100%);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.65;margin:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-block:40px 56px}
+.mark{display:flex;justify-content:center}
+.mark i{width:14px;height:14px;border-radius:50%;background:var(--mango);box-shadow:20px 0 0 var(--pine),40px 0 0 var(--orange),60px 0 0 var(--fig);margin-right:60px}
+.intro{text-align:center;max-width:46em;margin:0 auto;padding-block:36px 52px}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--on-accent);background:var(--accent);border-radius:999px;padding:.45em 1.1em}
+.intro h1{font-size:clamp(3.2rem,12vw,8rem);letter-spacing:.03em;margin:26px 0 22px;color:var(--fg)}
+.intro p{font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--muted);max-width:28em;margin:0 auto}
+.pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.pills span{border:1.5px solid var(--fg);border-radius:999px;padding:.5em 1.3em;font-weight:700;font-size:.95rem}
+.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.shot{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:radial-gradient(ellipse 70% 60% at 35% 28%,var(--hi),var(--bgc) 70%)}
+.shot::after{content:"";position:absolute;inset:auto 0 0 0;height:34%;background:linear-gradient(to top,rgba(30,12,4,.25),transparent)}
+.shot svg.piece{position:absolute;width:62%;left:19%;top:14%;filter:drop-shadow(0 18px 18px rgba(30,12,4,.38))}
+.shot .tag{position:absolute;left:18px;bottom:14px;z-index:2;color:#fff;font-family:var(--font-display);font-size:2rem;letter-spacing:.06em;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.koek{--hi:#ffd54f;--bgc:#f08a00}
+.snoep{--hi:#d08cc2;--bgc:#5a1f55}
+.choc{--hi:#c28a63;--bgc:#4a2418}
+footer{border-top:1px solid var(--line);margin-top:64px;padding-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}
+@media (max-width:760px){.row{grid-template-columns:1fr}.shot{aspect-ratio:16/11}.shot svg.piece{width:36%;left:32%;top:12%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="mark" aria-hidden="true"><i></i></div>
+  <main class="intro">
+    <span class="eyebrow">Biologisch & natuurlijk</span>
+    <h1>Everybody loves fruit</h1>
+    <p>Wij maken biologische en natuurlijke tussendoortjes: koek, snoep en chocolade.</p>
+    <div class="pills"><span>Biologisch</span><span>Natuurlijk</span></div>
+  </main>
+  <div class="row">
+    <div class="shot koek" role="img" aria-label="Een koek met chocoladestukjes op een goudgele achtergrond">
+      <svg class="piece" viewBox="0 0 200 200" style="transform:rotate(-8deg)">
+        <circle cx="100" cy="100" r="78" fill="#d9a066"/>
+        <circle cx="100" cy="100" r="78" fill="none" stroke="#b97d44" stroke-width="6"/>
+        <path d="M150 38a30 30 0 0 0 20 46a78 78 0 0 0-20-46Z" fill="#f08a00" opacity="0"/>
+        <g fill="#4a2a18"><ellipse cx="70" cy="74" rx="11" ry="8" transform="rotate(-20 70 74)"/><ellipse cx="122" cy="62" rx="10" ry="7" transform="rotate(25 122 62)"/><ellipse cx="96" cy="112" rx="12" ry="8" transform="rotate(10 96 112)"/><ellipse cx="56" cy="124" rx="9" ry="7" transform="rotate(30 56 124)"/><ellipse cx="136" cy="116" rx="11" ry="8" transform="rotate(-15 136 116)"/><ellipse cx="108" cy="150" rx="9" ry="6" transform="rotate(5 108 150)"/></g>
+        <path d="M44 96c8-24 26-40 48-46" stroke="#f1c488" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="tag">Koek</span>
+    </div>
+    <div class="shot snoep" role="img" aria-label="Een gewikkeld snoepje op een paarse achtergrond">
+      <svg class="piece" viewBox="0 0 200 200" style="transform:rotate(10deg)">
+        <path d="M18 70L56 100L18 130Z" fill="#f0c93e"/>
+        <path d="M182 70L144 100L182 130Z" fill="#f0c93e"/>
+        <ellipse cx="100" cy="100" rx="58" ry="48" fill="#e5461a"/>
+        <path d="M60 78c20 14 60 14 80 0M56 100c26 14 62 14 88 0M62 122c20 12 56 12 76 0" stroke="#ffd0b0" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <ellipse cx="80" cy="80" rx="16" ry="8" fill="#fff" opacity=".35" transform="rotate(-24 80 80)"/>
+      </svg>
+      <span class="tag">Snoep</span>
+    </div>
+    <div class="shot choc" role="img" aria-label="Een reep chocolade op een donkerbruine achtergrond">
+      <svg class="piece" viewBox="0 0 200 200" style="transform:rotate(-10deg)">
+        <rect x="38" y="30" width="124" height="148" rx="12" fill="#5a2c1c"/>
+        <g fill="#7a3f2a"><rect x="46" y="38" width="34" height="32" rx="6"/><rect x="83" y="38" width="34" height="32" rx="6"/><rect x="120" y="38" width="34" height="32" rx="6"/><rect x="46" y="74" width="34" height="32" rx="6"/><rect x="83" y="74" width="34" height="32" rx="6"/><rect x="120" y="74" width="34" height="32" rx="6"/><rect x="46" y="110" width="34" height="32" rx="6"/><rect x="83" y="110" width="34" height="32" rx="6"/><rect x="120" y="110" width="34" height="32" rx="6"/></g>
+        <path d="M30 120h140v62a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8Z" fill="#f2a12b"/>
+        <path d="M30 120l30 14l30-14l30 14l30-14l20 8v-8Z" fill="#f2a12b"/>
+        <rect x="52" y="148" width="96" height="10" rx="5" fill="#fff" opacity=".7"/>
+        <rect x="68" y="166" width="64" height="8" rx="4" fill="#fff" opacity=".45"/>
+      </svg>
+      <span class="tag">Chocolade</span>
+    </div>
+  </div>
+  <footer><span>© 2026 Everybody loves fruit</span><span>Biologische en natuurlijke tussendoortjes</span></footer>
+</div>
+
+</body></html>
